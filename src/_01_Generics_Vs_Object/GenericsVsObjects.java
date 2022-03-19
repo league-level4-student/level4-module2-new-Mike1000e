@@ -14,7 +14,7 @@ public class GenericsVsObjects {
         GenericsList<String> generics = new GenericsList<String>();
         generics.add("Bob");
         generics.add("Anne");
-        generics.add(5);
+        //generics.add(5);
         generics.add("Tom");
 
         /*
@@ -24,7 +24,7 @@ public class GenericsVsObjects {
         ObjectsList objects = new ObjectsList();
         objects.add("Bob");
         objects.add("Anne");
-        objects.add(5);
+        //objects.add(5);
         objects.add("Tom");
 
         System.out.println(generics);
