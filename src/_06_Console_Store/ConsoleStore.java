@@ -1,5 +1,7 @@
 package _06_Console_Store;
 
+import java.util.Scanner;
+
 public class ConsoleStore {
 
     /*
@@ -36,8 +38,57 @@ public class ConsoleStore {
      * items and their total.
      */
 
+	
+	
+	
     public static void main(String[] args) {
 
+    	int bank = 100;
+    	Scanner scanner = new Scanner(System.in);
+    	Cart cart = new Cart;
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
     }
 
 }

@@ -1,21 +1,21 @@
-package _02_Generics_Store;
+package _06_Console_Store;
 
 import java.util.Random;
 
 import javax.swing.JLabel;
 
-public class Cereal extends Food{
-	public Cereal() {
+public class Clothing extends NonFood{
+	public Clothing() {
 		if(new Random().nextBoolean()) {
-			this.item = "cereal1.jpeg";
+			this.item = "clothing1.jpeg";
 		}
 		else {
-			this.item = "cereal2.jpeg";
+			this.item = "clothing2.jpeg";
 		}
 	}
 
 	@Override
-	public JLabel getFood() {
+	public JLabel getNonFood() {
 		// TODO Auto-generated method stub
 		return new JLabel(loadImage(this.item));
 	}
