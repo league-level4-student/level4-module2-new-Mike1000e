@@ -44,11 +44,57 @@ public class ConsoleStore {
     public static void main(String[] args) {
 
     	int bank = 100;
+    	int candyCost = 1;
+    	int cerealCost = 10;
+    	int toyCost = 15;
+    	int clothingCost = 20;
+    	boolean stopShopping = false;
+    	
     	Scanner scanner = new Scanner(System.in);
-    	Cart cart = new Cart;
     	
     	
+    	System.out.println("What items do you want to shop for? (Food, Non-Food");
+    	String shoppinCart = scanner.nextLine();
+    	boolean x = shoppinCart.equals("Food") ? true : false;
+    	if(x) {
+    		Cart<Food> cart = new Cart<Food>();
+    		
+    		do {
+    			System.out.println("What do you want to do? (AddToCart / RemoveFromCart / CheckOut");
+    			String doNow = scanner.nextLine();
+    			
+    			if(doNow.equals("AddToCart")) {
+    				System.out.println("What do you want to add to your cart? (Candy / Cereal)");
+    				String foodType = scanner.nextLine();
+    				boolean foodSelect = foodType.equals("Candy") ? true : false;
+    				
+    				if(foodSelect) {
+    					System.out.println("How much candy would you like? (type in numbers, not letters)");
+    					int candyNumber = Integer.parseInt(scanner.nextLine());
+    				    for(int i = 0; i < candyNumber; i++) {
+    				    	cart.add(new Candy());
+    				    }
+    				} else {
+    					System.out.println("How much cereal would you like? (type in numbers, not letters)");
+    					int cerealNumber = Integer.parseInt(scanner.nextLine());
+    				    for(int i = 0; i < cerealNumber; i++) {
+    				    	cart.add(new Cereal());
+    				    	
+    				    }
+    				}
+    						
+    			}else if(doNow.equals("RemoveFromCart")) {
+    					
+    			}else if(doNow.equals("CheckOut")) {
+    				stopShopping = true;
+    			}
+    			
+    		} while(stopShopping != true);
+    			
     	
+    	}else {
+    		Cart<NonFood> cart = new Cart<NonFood>();
+    	}
     	
     	
     	
